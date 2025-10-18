@@ -1,3 +1,13 @@
+:root {
+    --primary-color1: #016B61;
+    --primary-color2: #70B2B2;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+
 .App {
   text-align: center;
 }

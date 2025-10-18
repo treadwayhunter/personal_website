@@ -1,0 +1,27 @@
+.header {
+    height: 8%;
+    width: 100%;
+    background-color: var(--primary-color1);
+    display: flex;
+}
+
+.header-tab {
+    height: 100%;
+    aspect-ratio: 2;
+    background-color: var(--primary-color1);
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    padding: 8px;
+    cursor: pointer;
+}
+
+.header-tab:hover {
+    background-color: var(--primary-color2);
+}
+
+.header-tab.selected {
+    background-color: var(--primary-color2);
+    border-bottom: 2px solid blue;
+    font-size: 18px;
+}
