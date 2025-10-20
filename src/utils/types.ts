@@ -1,3 +1,5 @@
+import {ComponentType} from "react";
+
 export type TabName =
     | "Home"
     | "Myself"
@@ -5,4 +7,4 @@ export type TabName =
     | "Blog"
     | "Resume";
 
-export type TabItem = { name: TabName; selected: boolean}
+export type TabItem = { name: TabName; selected: boolean; screen: ComponentType }

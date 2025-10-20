@@ -42,6 +42,7 @@ const Header = () => {
         <div className="header">
             <Tab name={"Home"}/>
             <Tab name={"Aspirations"}/>
+            <Tab name={"Myself"}/>
         </div>
     );
 }
