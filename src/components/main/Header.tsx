@@ -14,7 +14,7 @@ const Tab = (props: TabProps) => {
     // I want to make sure I'm pulling the right state here?
     const myTabState = (): TabItem | undefined => {
         for (let tab of tabState) {
-            if (props.name === tab.name) {
+            if (props.name === tab.tabName) {
                 return tab;
             }
         }
@@ -23,7 +23,7 @@ const Tab = (props: TabProps) => {
     const onClick = () => {
         setTabState(prev =>
         prev.map(t =>
-            t.name === props.name
+            t.tabName === props.name
                 ? { ...t, selected: true}
                 : { ...t, selected: false }
         ));
@@ -37,12 +37,15 @@ const Tab = (props: TabProps) => {
 }
 
 const Header = () => {
+    const {tabState, setTabState} = useMainTabContext();
 
     return (
         <div className="header">
-            <Tab name={"Home"}/>
-            <Tab name={"Aspirations"}/>
-            <Tab name={"Myself"}/>
+            {
+                tabState.map((tab: TabItem) => (
+                    <Tab name={tab.tabName} />
+                ))
+            }
         </div>
     );
 }

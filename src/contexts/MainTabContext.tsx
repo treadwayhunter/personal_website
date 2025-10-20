@@ -19,7 +19,7 @@ export const setSelectedTab = (name: TabName, currentState: TabItem[]): TabItem[
     console.log("SET SELECTED TAB");
     const newState: TabItem[] = currentState;
     for(let i = 0; i < currentState.length; i++) {
-        newState[i].selected = newState[i].name === name;
+        newState[i].selected = newState[i].tabName === name;
     }
     console.log(newState);
     return newState;
@@ -29,9 +29,9 @@ export const MainTabProvider = ({ children }: MainTabProviderProps) => {
     // default state will be the main tab?
     const [tabState, setTabState] = useState<TabItem[]>(
         [
-            {name: "Home", selected: true, screen: HomeScreen},
-            {name: "Aspirations", selected: false, screen: PlaceholderScreen},
-            {name: "Myself", selected: false, screen: PlaceholderScreen},
+            {tabName: "Home", selected: true, screen: HomeScreen},
+            {tabName: "Aspirations", selected: false, screen: PlaceholderScreen},
+            {tabName: "Myself", selected: false, screen: PlaceholderScreen},
         ]
     );
 

@@ -7,4 +7,4 @@ export type TabName =
     | "Blog"
     | "Resume";
 
-export type TabItem = { name: TabName; selected: boolean; screen: ComponentType }
+export type TabItem = { tabName: TabName; selected: boolean; screen: ComponentType }
