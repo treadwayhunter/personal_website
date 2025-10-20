@@ -8,7 +8,6 @@ interface TabProps {
     name: TabName;
 }
 
-// TODO this will likely need a context
 const Tab = (props: TabProps) => {
     const {tabState, setTabState} = useMainTabContext();
 
