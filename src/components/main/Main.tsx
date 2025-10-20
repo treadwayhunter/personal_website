@@ -1,5 +1,5 @@
-import '../styles/Main.css'
-import Header from "../components/Header"
+import '../../styles/Main.css'
+import Header from "./Header"
 
 const Main = () => {
     return (

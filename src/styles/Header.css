@@ -14,10 +14,16 @@
     justify-content: center;
     padding: 8px;
     cursor: pointer;
+    user-select: none;
+}
+
+.header-tab > * {
+    pointer-events: none;
 }
 
 .header-tab:hover {
     background-color: var(--primary-color2);
+    cursor: pointer;
 }
 
 .header-tab.selected {
