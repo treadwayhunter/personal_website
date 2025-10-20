@@ -1,6 +1,7 @@
 import {createContext, Dispatch, ReactNode, SetStateAction, useContext, useState} from "react";
 import {TabItem, TabName} from "../utils/types";
 import PlaceholderScreen from "../components/tabScreens/PlaceholderScreen";
+import HomeScreen from "../components/tabScreens/HomeScreen";
 
 
 interface MainTabContextType {
@@ -28,7 +29,7 @@ export const MainTabProvider = ({ children }: MainTabProviderProps) => {
     // default state will be the main tab?
     const [tabState, setTabState] = useState<TabItem[]>(
         [
-            {name: "Home", selected: true, screen: PlaceholderScreen},
+            {name: "Home", selected: true, screen: HomeScreen},
             {name: "Aspirations", selected: false, screen: PlaceholderScreen},
             {name: "Myself", selected: false, screen: PlaceholderScreen},
         ]
