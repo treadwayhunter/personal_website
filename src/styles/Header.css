@@ -3,6 +3,7 @@
     width: 100%;
     background-color: var(--primary-color1);
     display: flex;
+    border-bottom: 2px solid black;
 }
 
 .header-tab {
