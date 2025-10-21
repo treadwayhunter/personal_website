@@ -1,5 +1,7 @@
 .header {
     height: 8%;
+    max-height: 8%;
+    min-height: 8%;
     width: 100%;
     background-color: var(--primary-color1);
     display: flex;

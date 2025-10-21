@@ -1,6 +1,7 @@
 :root {
     --primary-color1: #016B61;
     --primary-color2: #70B2B2;
+    --default-padding: 8px;
 }
 
 *, *::before, *::after {
