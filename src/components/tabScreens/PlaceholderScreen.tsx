@@ -1,6 +1,6 @@
 const PlaceholderScreen = () => {
     return (
-        <div>THIS HAS NOT BE IMPLEMENTED YET</div>
+        <div>More to come. Still implementing this page.</div>
     );
 }
 

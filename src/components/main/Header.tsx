@@ -41,9 +41,13 @@ const Header = () => {
 
     return (
         <div className="header">
+            <div className="header-title">
+                <span>Hunter</span>
+                <span>Treadway</span>
+            </div>
             {
                 tabState.map((tab: TabItem) => (
-                    <Tab name={tab.tabName} />
+                    <Tab name={tab.tabName} key={tab.tabName} />
                 ))
             }
         </div>

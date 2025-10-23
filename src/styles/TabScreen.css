@@ -1,6 +1,4 @@
 .tab-screen {
-    display: flex;
-    height: 100%;
-    width: 100%;
-    background-color: #61dafb;
+    flex: 1 1 auto;
+    min-height: 0;
 }

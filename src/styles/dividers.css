@@ -1,0 +1,14 @@
+.vertical-divider {
+    height: 100%;
+    width: 2px;
+    display: flex;
+    align-items: center;
+    margin: 2px;
+}
+
+.vertical-divider > * {
+    height: 95%;
+    width: 100%;
+    background-color: black;
+}
+
