@@ -2,8 +2,18 @@
 import '../../styles/MyselfScreen.css';
 import VerticalDivider from "../custom/VerticalDivider";
 import ImageGallery from "../imageGallery/ImageGallery";
+import {useEffect, useState} from "react";
 
 const MyselfScreen = () => {
+
+    const [text, setText] = useState<string>("");
+
+    useEffect(() => {
+        fetch('/test.txt')
+            .then(res => res.text())
+            .then(data => setText(data));
+    }, []);
+
     return (
       <div className='myself-screen'>
           <div className="myself-screen-left">
@@ -13,7 +23,7 @@ const MyselfScreen = () => {
           </div>
           <VerticalDivider />
           <div className="myself-screen-right">
-              <span>Start working on this</span>
+              <span>{text}</span>
           </div>
       </div>
     );

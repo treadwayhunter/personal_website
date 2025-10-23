@@ -1,0 +1,8 @@
+.image_gallery {
+    opacity: 1;
+    transition: width 0.8s ease, opacity 0.8s ease;
+}
+
+.image_gallery.hidden {
+    opacity: 0;
+}

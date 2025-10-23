@@ -16,7 +16,7 @@
 .image-container {
     height: 60%;
     width: 100%;
-    background-color: lightgray;
+    background-color: gray;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -29,18 +29,9 @@
     object-fit: contain;
 }
 
-.vertical-divider {
-    height: 100%;
-    width: 2px;
-    display: flex;
-    align-items: center;
-}
 
-.vertical-divider > * {
-    height: 95%;
-    width: 100%;
-    background-color: var(--primary-color3);
-}
+
+
 
 .myself-screen-right {
     padding: 24px;

@@ -1,0 +1,3 @@
+Welcome!
+I am not much of a UI designer, but I designed this website using React. This is a brand new site,
+where a lot of work is still in progress.

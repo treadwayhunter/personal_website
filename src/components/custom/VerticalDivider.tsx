@@ -1,3 +1,5 @@
+import '../../styles/dividers.css';
+
 const VerticalDivider = () => {
     return (
         <div className="vertical-divider">
